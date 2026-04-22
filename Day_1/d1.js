@@ -122,3 +122,69 @@
 
 */
 
+
+
+/*
+    let limit = 5;
+    for (let i = 1; i <= limit; i++) {
+        let row = "";
+
+        for (let j = 1; j <= limit; j++) {
+            row += (i * j) + "\t"; 
+        }
+
+        console.log("Row " + i + ": " + row);
+    }
+*/
+
+
+
+/*
+    for (let i = 1; i <= 10; i++) {
+        
+        if (i === 5) {
+            console.log("Skipping 5...");
+            continue; 
+        }
+
+        console.log("Number: " + i);
+    }
+
+*/
+
+/*
+    for (let i = 1; i <= 10; i++) {
+        
+        // If i is 5, kill the loop entirely
+        if (i === 5) {
+            console.log("Found 5! Stopping the loop now.");
+            break; 
+        }
+
+        console.log("Number: " + i);
+    }
+    console.log("Loop ended.");
+
+
+
+*/
+
+/*
+
+    let i = 1;
+    while (i <= 5) {
+        console.log("Number: " + i);
+        i++;
+    }
+*/
+
+/*
+    let i = 100;
+    do {
+        console.log("Number: " + i);
+        i++;
+    } while (i <= 5);
+*/
+
+
+
