@@ -1,7 +1,7 @@
 document.write("mANAV sINH")
 console.log("MNV");
 
-
+/*
 
 
 let rows = 4;
@@ -176,3 +176,200 @@ for (let i = 1; i <= height; i++) {
         console.log(outerSpace + "*" + innerSpace + "*");
     }
 }
+
+
+*/
+
+console.log(".......................................................................................................................");
+
+/*
+
+const subtracte = (a, b) => {
+    return a - b;
+  };
+  
+  console.log("Subtraction", subtracte(10, 5));
+  
+
+console.log("Claculator")
+
+const add = function(a, b) { return a + b; };
+const subtract = function(a, b) { return a - b; };
+const multiply = function(a, b) { return a * b; };
+const divide = function(a, b) { 
+    return b === 0 ? "Error: Division by zero" : a / b; 
+};
+
+const calculate = function(num1, num2, operator) {
+    switch (operator) {
+        case '+': return add(num1, num2);
+        case '-': return subtract(num1, num2);
+        case '*': return multiply(num1, num2);
+        case '/': return divide(num1, num2);
+        default: return "Invalid Operator";
+    }
+};
+
+const n1 = parseFloat(prompt("Enter the first number:"));
+const op = prompt("Enter an operator (+, -, *, /):");
+const n2 = parseFloat(prompt("Enter the second number:"));
+
+const result = calculate(n1, n2, op);
+
+console.log(`Result: ${result}`);
+alert(`Result: ${result}`);
+
+
+*/
+
+/*
+
+console.log("..................................................................................................................................................................");
+
+
+
+
+// 9. CALLBACK FUNCTION
+
+function processUser(name, callback) {
+    console.log("Processing " + name);
+    callback();
+}
+
+function done() {
+    console.log("Done!");
+}
+
+processUser("Rahul", done);
+ 2.02       
+
+
+
+ // 📝 5. Change Case
+
+const text2 = "JavaScript";
+
+console.log("6.", text2.toUpperCase());
+console.log("7.", text2.toLowerCase());
+
+
+
+
+
+const teext = "hello world";
+const reesult = teext.toUpperCase(); 
+
+console.log(reesult); // "HELLO WORLD"
+
+
+
+const texxt = "HELLO WORLD";
+const resuult = texxt.toLowerCase();
+
+console.log(resuult); // "hello world"
+
+
+
+
+
+const ttext = "Hello World";
+
+// 1. Basic slice (from index 0 to 5)
+console.log(ttext.slice(0, 5)); // "Hello"
+
+// 2. Slice to the end (omit the second parameter)
+console.log(ttext.slice(6));    // "World"
+
+// 3. Negative indices (count from the end)
+console.log(ttext.slice(-5));   // "World"
+
+
+
+
+
+
+
+
+
+
+
+
+const textt = "Apple, Banana, Cherry";
+
+// 1. Split by comma and space
+const frruits = textt.split(", ");
+console.log(frruits); // ["Apple", "Banana", "Cherry"]
+
+// 2. Split by every character (use an empty string)
+const letterrs = "Hi".split("");
+console.log(letterrs); // ["H", "i"]
+
+// 3. Limit the results
+const partyial = textt.split(", ", 2);
+console.log(partyial); // ["Apple", "Banana"]
+
+
+
+
+
+
+const tnext = "Apple, Banana, Cherry";
+
+// 1. Split by comma and space
+const frunits = tnext.split(", ");
+console.log(frunits); // ["Apple", "Banana", "Cherry"]
+
+// 2. Split by every character (use an empty string)
+const letteeers = "Hi".split("");
+console.log(letteeers); // ["H", "i"]
+
+// 3. Limit the results
+const partial = tnext.split(", ", 2);
+console.log(partial); // ["Apple", "Banana"]
+
+
+
+
+const teeext = "Hello World";
+
+// 1. Basic slice (from index 0 to 5)
+console.log(teeext.slice(0, 5)); // "Hello"
+
+// 2. Slice to the end (omit the second parameter)
+console.log(teeext.slice(6));    // "World"
+
+// 3. Negative indices (count from the end)
+console.log(teeext.slice(-5));   // "World"
+
+*/
+
+
+// 1. The Original String
+const message = "Learning JavaScript is Fun!";
+console.log("Original:", message);
+
+// 2. Length Property (Counts all characters)
+const size = message.length;
+console.log("Length:", size); // 27
+
+// 3. Lowercase & Uppercase
+const lower = message.toLowerCase();
+const upper = message.toUpperCase();
+console.log("Lowercase:", lower); // "learning javascript is fun!"
+console.log("Uppercase:", upper); // "LEARNING JAVASCRIPT IS FUN!"
+
+// 4. Slicing (Extracting a part)
+// Extracts from index 9 to 19 (the word "JavaScript")
+const piece = message.slice(9, 19);
+console.log("Sliced Part:", piece); // "JavaScript"
+
+// 5. Splitting (Breaking into an Array)
+// Splits the string at every space
+const words = message.split(" ");
+console.log("Word Array:", words); // ["Learning", "JavaScript", "is", "Fun!"]
+
+// 6. Practical Example: Capitalizing the first letter
+const str = "hello";
+const capitalized = str.charAt(0).toUpperCase() + str.slice(1);
+console.log("Capitalized Example:", capitalized); // "Hello"
+
