@@ -1,3 +1,6 @@
+
+/*
+
 let celsius = prompt("Enter Celsius value: ");
         celsius = parseFloat(celsius);
         let change = (celsius*9/5)+32;
@@ -8,98 +11,10 @@ let result = prompt("Please enter your name:", "Guest");
         console.log(result);
 
 
+*/        
+
 /*
 
- // --- BASIC (Loops + Conditions) ---
-
-// 1. Print numbers 1 to 10
-console.log("1:");
-for (let i = 1; i <= 10; i++) console.log(i);
-
-// 2. All even numbers between 1 and 20
-console.log("2:");
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) console.log(i);
-}
-
-// 3. Check positive, negative, or zero
-let num = 5; 
-console.log("3:", num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero");
-
-// 4. Multiplication table (e.g., 5)
-let tableNum = 5;
-console.log("4:");
-for (let i = 1; i <= 10; i++) console.log(`${tableNum} x ${i} = ${tableNum * i}`);
-
-
-// --- INTERMEDIATE (Arrays + Loops) ---
-
-let arr = [10, 20, 30, 40];
-
-// 5. Print all elements
-console.log("5:");
-arr.forEach(val => console.log(val));
-
-// 6. Sum of all numbers
-let sum = arr.reduce((acc, curr) => acc + curr, 0);
-console.log("6: Sum is", sum);
-
-// 7. Find largest number
-console.log("7: Largest is", Math.max(...arr));
-
-// 8. Count even numbers
-let countEven = arr.filter(n => n % 2 === 0).length;
-console.log("8: Even count is", countEven);
-
-
-// --- INTERMEDIATE (Objects + Conditions) ---
-
-// 9. Student object check
-let student = { name: "Raj", marks: 80 };
-console.log("9:", student.marks >= 40 ? "Pass" : "Fail");
-
-// 10. Voting eligibility
-let person = { name: "John", age: 17 };
-console.log("10:", person.age >= 18 ? "Eligible" : "Not Eligible");
-
-// 11. Loop through object keys and values
-console.log("11:");
-for (let key in person) {
-    console.log(`${key}: ${person[key]}`);
-}
-
-
-// --- ADVANCED (Mixed Concepts) ---
-
-// 12. Create array with only odd numbers
-let mixedNums = [1, 2, 3, 4, 5, 6];
-let odds = mixedNums.filter(n => n % 2 !== 0);
-console.log("12: Odds are", odds);
-
-// 13. Reverse array using a loop
-let toReverse = [1, 2, 3, 4, 5];
-let reversed = [];
-for (let i = toReverse.length - 1; i >= 0; i--) {
-    reversed.push(toReverse[i]);
-}
-console.log("13: Reversed:", reversed);
-
-// 14. Print names of students who passed
-let students = [
-    { name: "A", marks: 80 },
-    { name: "B", marks: 35 },
-    { name: "C", marks: 60 }
-];
-console.log("14: Passed students:");
-students.filter(s => s.marks >= 40).forEach(s => console.log(s.name));
-
-// 15. Count occurrences of a specific element
-let items = ["apple", "banana", "apple", "orange", "apple"];
-let target = "apple";
-let count = items.filter(i => i === target).length;
-console.log(`15: '${target}' appears ${count} times.`);
-       
-*/
 
 
 // --- BASIC (Loops + Conditions) ---
@@ -301,5 +216,209 @@ console.log(findMaxLength(input)); // Output: 6
 
 
 
+*/
 
 
+/*
+function countVowel(str) {
+  let count = 0;
+  let vowel = "aeiouAEIOU";
+  for (let char of str) {
+    if (vowel.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countVowel("aeidfushdfiuwhfeuihou"));
+
+
+
+*/
+
+/*
+
+// 15. REVERSE
+// Reverse order
+// ---------------------------------
+arr.reverse();
+console.log("15:", arr);
+
+// ---------------------------------
+// 16. SLICE
+// Copy part (no change)
+// ---------------------------------
+
+let sliceArr = [1, 2, 3, 4, 7];
+let sliced = sliceArr.slice(2, 4);
+console.log("16:", sliced);
+
+
+*/
+
+
+/*
+
+function reVStr(str){
+    let reverse=str.split("").reverse().join("")
+    return reverse;
+}
+console.log(reVStr("vanaM"))
+
+
+
+
+const fruits = ["apple", "orange", "banana", "pear", "blueberry", "kiwi", "papaya"];
+const newFruits = fruits.slice(2, 4);
+
+console.log(newFruits);
+
+
+
+let spliceArr = [1, 2, 3, 4, 7];
+spliceArr.splice(0, 3);
+console.log("17:", spliceArr);
+*/
+
+
+/*
+let fruits = ["Apple", "Banana", "Cherry"];
+let joined = fruits.join(", ");
+console.log("18:", joined);
+
+*/
+
+/*
+
+
+
+
+
+let spliceArr = [1, 2, 3, 4, 7];
+spliceArr.splice(0, 3);
+console.log("17:", spliceArr);
+
+let fruits = ["Apple", "Banana", "Cherry"];
+let joined = fruits.join(", ");
+console.log("18:", joined);
+
+let a = [1, 2];
+let b = [3, 4];
+let combined = [...a, ...b];
+console.log("19:", combined);
+
+
+*/
+
+/*
+
+let matrix = [[1, 2], [3, 4], [9, 5]];
+console.log("20:", matrix[2][0]);
+*/
+ 
+/*
+
+function listInter(list1, list2) {
+  let listIntersection = [];
+  for (let name of list1) {
+    if (list2.includes(name)) {
+      listIntersection.push(name);
+    }
+  }
+  return listIntersection;
+}
+
+let list1 = ["Alice", "Bob", "Charlie"];
+let list2 = ["Bob", "David", "Alice"];
+
+console.log(listInter(list1, list2));
+
+
+
+function removeDubArray(arr){
+    return [...new Set(arr)]
+}
+
+console.log(removeDubArray([2,3,4,5,2,4,2,45,5,3,2,2,5,6,7,8]))
+
+
+*/
+
+
+function findIntersection(arr1, arr2) {
+  let intersection = [];
+  for (let number of arr1) {
+    if (arr2.includes(number) && !intersection.includes(number)) {
+      intersection.push(number);
+    }
+  }
+  return intersection;
+}
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 1];
+console.log(findIntersection(arr1, arr2));
+
+
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+const input = prompt("Enter a number :");
+const n = parseInt(input);
+
+const isPrime = (num) => {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+};
+
+console.log(`Prime numbers between 0 and ${n}:`);
+for (let i = 2; i <= n; i++) {
+    if (isPrime(i)) {
+        console.log(i);
+    }
+}
+
+
+*/
